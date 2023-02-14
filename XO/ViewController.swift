@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     private var dimash:UILabel = {
         let label = UILabel()
-        label.text = "Dimash MAAAAl"
+        label.text = "MAAAAl"
         label.textColor = .white
         return label
     }()
