@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     private let countLabel:UILabel = {
        var label = UILabel()
-        label.text = ""
+        label.text = ":"
         return label
     }()
     
@@ -42,7 +42,8 @@ class ViewController: UIViewController {
         let ran2 = arr2.randomElement()!
         let cnt = arr1.firstIndex(of: ran1)! + arr2.firstIndex(of: ran2)! + 2
         
-        countLabel.text = "Count \(cnt)"
+        countLabel.text = "Count: \(cnt)"
+        countLabel.font = UIFont.boldSystemFont(ofSize: 17.0)
         
         firstRoll.image = UIImage(named: "\(ran1)")
         secondRoll.image = UIImage(named: "\(ran2)")
@@ -52,18 +53,17 @@ class ViewController: UIViewController {
     func setupConst(){
         firstRoll.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(50)
-            make.leading.equalToSuperview().inset(120)
-            make.width.height.equalTo(70)
+            make.leading.equalToSuperview().inset(150)
+            make.width.height.equalTo(50)
         }
         secondRoll.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().inset(120)
+            make.trailing.equalToSuperview().inset(150)
             make.top.equalToSuperview().inset(50)
-            make.width.height.equalTo(70)
+            make.width.height.equalTo(50)
         }
         countLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(60)
-            make.top.equalToSuperview().inset(50)
-            make.width.height.equalTo(70)
+            make.top.equalTo(firstRoll.snp.bottom).offset(10)
+            make.left.equalToSuperview().inset(175)
         }
         
         
