@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     let arr1 = ["roll1","roll2","roll3","roll4","roll5","roll6"]
     let arr2 = ["roll1","roll2","roll3","roll4","roll5","roll6"]
     
-    
 
     private var firstRoll: UIImageView = {
         var imageView = UIImageView()
@@ -37,11 +36,14 @@ class ViewController: UIViewController {
         view.addSubview(firstRoll)
         view.addSubview(secondRoll)
         view.addSubview(countLabel)
+        
         setupConst()
         let ran1 = arr1.randomElement()!
         let ran2 = arr2.randomElement()!
-        find(ran1)
-
+        let cnt = arr1.firstIndex(of: ran1)! + arr2.firstIndex(of: ran2)! + 2
+        
+        countLabel.text = "Count \(cnt)"
+        
         firstRoll.image = UIImage(named: "\(ran1)")
         secondRoll.image = UIImage(named: "\(ran2)")
 
