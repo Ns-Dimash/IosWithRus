@@ -11,8 +11,8 @@ class ViewController: UIViewController{
     
     
     var numPlayers = RegistrationViewController.textFieldValue
-    var numpy = 4
-//    asf
+    
+//    Dimash
    
     
     let arr1 = ["roll1","roll2","roll3","roll4","roll5","roll6"]
