@@ -11,6 +11,8 @@ class ViewController: UIViewController{
     
     
     var numPlayers = RegistrationViewController.textFieldValue
+    
+//    asf
    
     
     let arr1 = ["roll1","roll2","roll3","roll4","roll5","roll6"]
