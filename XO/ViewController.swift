@@ -11,7 +11,7 @@ class ViewController: UIViewController{
     
     
     var numPlayers = RegistrationViewController.textFieldValue
-    
+    var numpy = 4
 //    asf
    
     
