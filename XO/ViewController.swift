@@ -7,10 +7,16 @@
 
 import UIKit
 import SnapKit
-class ViewController: UIViewController {
+class ViewController: UIViewController{
+    
+    
+    var numPlayers = RegistrationViewController.textFieldValue
+   
     
     let arr1 = ["roll1","roll2","roll3","roll4","roll5","roll6"]
     let arr2 = ["roll1","roll2","roll3","roll4","roll5","roll6"]
+    
+
     
 
     private var firstRoll: UIImageView = {
@@ -26,7 +32,7 @@ class ViewController: UIViewController {
     
     private let countLabel:UILabel = {
        var label = UILabel()
-        label.text = ":"
+        label.text = "Count:0"
         return label
     }()
     
@@ -36,7 +42,6 @@ class ViewController: UIViewController {
         view.addSubview(firstRoll)
         view.addSubview(secondRoll)
         view.addSubview(countLabel)
-        
         setupConst()
         let ran1 = arr1.randomElement()!
         let ran2 = arr2.randomElement()!
@@ -47,6 +52,9 @@ class ViewController: UIViewController {
         
         firstRoll.image = UIImage(named: "\(ran1)")
         secondRoll.image = UIImage(named: "\(ran2)")
+        
+        print(numPlayers)
+        print(countLabel.text)
 
     }
     

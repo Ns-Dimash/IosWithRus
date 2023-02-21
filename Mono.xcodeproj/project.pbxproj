@@ -12,17 +12,19 @@
 		01CEDB72299C07B800ED27E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEDB71299C07B800ED27E9 /* ViewController.swift */; };
 		01CEDB77299C07B900ED27E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CEDB76299C07B900ED27E9 /* Assets.xcassets */; };
 		01CEDB7A299C07B900ED27E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CEDB78299C07B900ED27E9 /* LaunchScreen.storyboard */; };
+		01DDBD4229A41845009C56FC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDBD4129A41845009C56FC /* RegistrationViewController.swift */; };
 		D49DF964C496FC6BC7B9E6CF /* Pods_XO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C332F2278395F35AB44A2720 /* Pods_XO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01CEDB6A299C07B800ED27E9 /* XO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01CEDB6A299C07B800ED27E9 /* Mono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CEDB6D299C07B800ED27E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01CEDB6F299C07B800ED27E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01CEDB71299C07B800ED27E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01CEDB76299C07B900ED27E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01CEDB79299C07B900ED27E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01CEDB7B299C07B900ED27E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DDBD4129A41845009C56FC /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		BA10E0E7C1704E5DE9647934 /* Pods-XO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XO.debug.xcconfig"; path = "Target Support Files/Pods-XO/Pods-XO.debug.xcconfig"; sourceTree = "<group>"; };
 		C332F2278395F35AB44A2720 /* Pods_XO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12D5E9384F8FF8BF73D1607 /* Pods-XO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XO.release.xcconfig"; path = "Target Support Files/Pods-XO/Pods-XO.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,7 +55,7 @@
 		01CEDB6B299C07B800ED27E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01CEDB6A299C07B800ED27E9 /* XO.app */,
+				01CEDB6A299C07B800ED27E9 /* Mono.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +69,7 @@
 				01CEDB76299C07B900ED27E9 /* Assets.xcassets */,
 				01CEDB78299C07B900ED27E9 /* LaunchScreen.storyboard */,
 				01CEDB7B299C07B900ED27E9 /* Info.plist */,
+				01DDBD4129A41845009C56FC /* RegistrationViewController.swift */,
 			);
 			path = XO;
 			sourceTree = "<group>";
@@ -77,7 +80,6 @@
 				BA10E0E7C1704E5DE9647934 /* Pods-XO.debug.xcconfig */,
 				E12D5E9384F8FF8BF73D1607 /* Pods-XO.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01CEDB69299C07B800ED27E9 /* XO */ = {
+		01CEDB69299C07B800ED27E9 /* Mono */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01CEDB7E299C07B900ED27E9 /* Build configuration list for PBXNativeTarget "XO" */;
+			buildConfigurationList = 01CEDB7E299C07B900ED27E9 /* Build configuration list for PBXNativeTarget "Mono" */;
 			buildPhases = (
 				FA59CEA8263A90682030D353 /* [CP] Check Pods Manifest.lock */,
 				01CEDB66299C07B800ED27E9 /* Sources */,
@@ -106,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = XO;
+			name = Mono;
 			productName = XO;
-			productReference = 01CEDB6A299C07B800ED27E9 /* XO.app */;
+			productReference = 01CEDB6A299C07B800ED27E9 /* Mono.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 01CEDB65299C07B800ED27E9 /* Build configuration list for PBXProject "XO" */;
+			buildConfigurationList = 01CEDB65299C07B800ED27E9 /* Build configuration list for PBXProject "Mono" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01CEDB69299C07B800ED27E9 /* XO */,
+				01CEDB69299C07B800ED27E9 /* Mono */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +207,7 @@
 			files = (
 				01CEDB72299C07B800ED27E9 /* ViewController.swift in Sources */,
 				01CEDB6E299C07B800ED27E9 /* AppDelegate.swift in Sources */,
+				01DDBD4229A41845009C56FC /* RegistrationViewController.swift in Sources */,
 				01CEDB70299C07B800ED27E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01CEDB65299C07B800ED27E9 /* Build configuration list for PBXProject "XO" */ = {
+		01CEDB65299C07B800ED27E9 /* Build configuration list for PBXProject "Mono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01CEDB7C299C07B900ED27E9 /* Debug */,
@@ -405,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01CEDB7E299C07B900ED27E9 /* Build configuration list for PBXNativeTarget "XO" */ = {
+		01CEDB7E299C07B900ED27E9 /* Build configuration list for PBXNativeTarget "Mono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01CEDB7F299C07B900ED27E9 /* Debug */,
