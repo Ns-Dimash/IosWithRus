@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01CEDB6A299C07B800ED27E9 /* Mono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01CEDB6A299C07B800ED27E9 /* XO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CEDB6D299C07B800ED27E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01CEDB6F299C07B800ED27E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01CEDB71299C07B800ED27E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		01CEDB6B299C07B800ED27E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01CEDB6A299C07B800ED27E9 /* Mono.app */,
+				01CEDB6A299C07B800ED27E9 /* XO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01CEDB69299C07B800ED27E9 /* Mono */ = {
+		01CEDB69299C07B800ED27E9 /* XO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01CEDB7E299C07B900ED27E9 /* Build configuration list for PBXNativeTarget "Mono" */;
+			buildConfigurationList = 01CEDB7E299C07B900ED27E9 /* Build configuration list for PBXNativeTarget "XO" */;
 			buildPhases = (
 				FA59CEA8263A90682030D353 /* [CP] Check Pods Manifest.lock */,
 				01CEDB66299C07B800ED27E9 /* Sources */,
@@ -108,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = Mono;
+			name = XO;
 			productName = XO;
-			productReference = 01CEDB6A299C07B800ED27E9 /* Mono.app */;
+			productReference = 01CEDB6A299C07B800ED27E9 /* XO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 01CEDB65299C07B800ED27E9 /* Build configuration list for PBXProject "Mono" */;
+			buildConfigurationList = 01CEDB65299C07B800ED27E9 /* Build configuration list for PBXProject "XO" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01CEDB69299C07B800ED27E9 /* Mono */,
+				01CEDB69299C07B800ED27E9 /* XO */,
 			);
 		};
 /* End PBXProject section */
@@ -399,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01CEDB65299C07B800ED27E9 /* Build configuration list for PBXProject "Mono" */ = {
+		01CEDB65299C07B800ED27E9 /* Build configuration list for PBXProject "XO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01CEDB7C299C07B900ED27E9 /* Debug */,
@@ -408,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01CEDB7E299C07B900ED27E9 /* Build configuration list for PBXNativeTarget "Mono" */ = {
+		01CEDB7E299C07B900ED27E9 /* Build configuration list for PBXNativeTarget "XO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01CEDB7F299C07B900ED27E9 /* Debug */,
