@@ -18,7 +18,13 @@ class ViewController: UIViewController{
     
 
     
-
+    private var map: UIImageView = {
+        var imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named:"map")
+        return imageView
+    }()
+    
     private var firstRoll: UIImageView = {
         var imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -42,6 +48,7 @@ class ViewController: UIViewController{
         view.addSubview(firstRoll)
         view.addSubview(secondRoll)
         view.addSubview(countLabel)
+        view.addSubview(map)
         setupConst()
         let ran1 = arr1.randomElement()!
         let ran2 = arr2.randomElement()!
@@ -54,11 +61,16 @@ class ViewController: UIViewController{
         secondRoll.image = UIImage(named: "\(ran2)")
         
         print(numPlayers)
-        print(countLabel.text)
+        print(countLabel.text!)
 
     }
     
     func setupConst(){
+        map.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.width.equalTo(420)
+            
+        }
         firstRoll.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(50)
             make.leading.equalToSuperview().inset(150)
