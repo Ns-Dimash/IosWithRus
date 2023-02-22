@@ -19,7 +19,7 @@ class ViewController: UIViewController{
         let person2 = Person(name: "blue", position:0 , money: 2000000)
 
     var poss = 0
-    
+    var mnt = 0
     var mapsArray = ["Go","Mediter-Ranean","Chest","Baltic","Tax","Reading","Oriental","Chance","Vermont","Connecticut","Just Visiting","St.Charles","Electric","States","Virginia","Pennsylvania","St.James","Chest","Tennessee","New York","Free Parking","Kentucky","Chance","Indiana","Illinois","B. & O.","Atlantic","Ventnor","Water","Marvin","GoToJail","Pacific","North Carolina","Chest","Pennsylvania","Short","Chance","ParkPlace","Luxury Tax","BoardWalk"]
     
     var numPlayers = RegistrationViewController.textFieldValue
@@ -106,7 +106,10 @@ class ViewController: UIViewController{
         let ran1 = arr1.randomElement()!
         let ran2 = arr2.randomElement()!
         cnt = arr1.firstIndex(of: ran1)! + arr2.firstIndex(of: ran2)! + 2
-        
+        mnt += cnt
+        if(mnt > 40) {
+            mnt = 0
+        }
         countLabel.text = "Count: \(cnt)"
         countLabel.font = UIFont.boldSystemFont(ofSize: 17.0)
         
@@ -114,7 +117,7 @@ class ViewController: UIViewController{
         secondRoll.image = UIImage(named: "\(ran2)")
 //        view.addSubview(buyButton)
 //        view.addSubview(notBuyButton)
-        place.text = "\(mapsArray[cnt])"
+        place.text = "\(mapsArray[mnt])"
         place.font = UIFont.boldSystemFont(ofSize: 23.0)
 
     }
